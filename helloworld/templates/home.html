@@ -1,0 +1,12 @@
+{% extends 'base.html' %} 
+
+{% block title %}Home{% endblock %} 
+
+
+{% block content %}
+<h2>Welcome to My Project</h2>
+<sl-button variant="primary" hx-get="/load-content" hx-target="#content">
+  Load Content
+</sl-button>
+<div id="content"></div>
+{% endblock %}
